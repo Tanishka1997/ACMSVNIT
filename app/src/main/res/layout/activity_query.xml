@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="org.acm.nitsurat.acmsvnit.QueryActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your E-Mail:"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/mail"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:id="@+id/message"
+        android:inputType="textMultiLine" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/send"
+        />
+</LinearLayout>

@@ -1,5 +1,6 @@
 package org.acm.nitsurat.acmsvnit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -64,6 +65,21 @@ public class MainActivity extends AppCompatActivity
         if(id==R.id.exit)
         {
             System.exit(0);
+        }
+        else if(id==R.id.query)
+        {
+            Intent intent=new Intent(getApplicationContext(),QueryActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.suggestion)
+        {
+            Intent intent=new Intent(getApplicationContext(),SuggestionActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.team)
+        {
+            Intent intent=new Intent(getApplicationContext(),TeamActivity.class);
+            startActivity(intent);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

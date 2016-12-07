@@ -18,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SuggestionActivity" />
+        <activity android:name=".QueryActivity" />
+        <activity android:name=".TeamActivity"></activity>
     </application>
 
 </manifest>
