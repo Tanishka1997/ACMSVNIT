@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -18,9 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SuggestionActivity" />
-        <activity android:name=".QueryActivity" />
-        <activity android:name=".TeamActivity"></activity>
+        <activity android:name=".SuggestionActivity"
+                  android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".QueryActivity"
+                  android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".TeamActivity"
+                  android:parentActivityName=".MainActivity"
+            >
+        </activity>
     </application>
 
 </manifest>
