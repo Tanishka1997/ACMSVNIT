@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "774598089353",
+    "firebase_url": "https://acm-svnit.firebaseio.com",
+    "project_id": "acm-svnit",
+    "storage_bucket": "acm-svnit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774598089353:android:34ca5cfa659cbb69",
+        "android_client_info": {
+          "package_name": "org.acm.nitsurat.acmsvnit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774598089353-jiqv4h5020smocskga13e0rk2el4mc56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2UqYFxO90UWRSxKzrujBOxWfxfH4QWfg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
