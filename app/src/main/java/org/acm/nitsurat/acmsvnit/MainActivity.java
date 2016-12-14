@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         if(id==R.id.exit)
         {
-            System.exit(0);
+            finish();
         }
         else if(id==R.id.query)
         {

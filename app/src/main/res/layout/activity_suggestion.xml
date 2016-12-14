@@ -35,15 +35,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Suggestions:"
+        android:text="Suggestions(Max. 750 Words) :"
         />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="261dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
         android:id="@+id/message"
         android:inputType="textMultiLine"
-        android:layout_weight="0.93" />
+        android:gravity="top"
+        android:layout_weight="1" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
