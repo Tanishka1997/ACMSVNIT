@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        ConnectivityManager connectivityManager =  (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        if(connectivityManager.getActiveNetworkInfo()==null)
+        if(!MainActivity.checkConnection(getApplicationContext()))
         {
             TextView statusTV=(TextView)findViewById(R.id.status);
             statusTV.setText("No Internet Connectivity\n\nTry Again Later");
@@ -39,6 +38,14 @@ public class MainActivity extends AppCompatActivity
         reset();
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+    public static boolean checkConnection(Context context) {
+        ConnectivityManager connectivityManager =  (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connectivityManager.getActiveNetworkInfo()==null)
+            return false;
+        return true;
+    }
+
     @Override
     public void onResume(){
         super.onResume();
