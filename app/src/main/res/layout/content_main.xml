@@ -18,6 +18,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/status"
         android:textSize="30sp"
-        android:gravity="center"
-        android:text="Hey There!" />
+        android:gravity="center" />
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
