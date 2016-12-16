@@ -24,7 +24,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    private RecyclerView mCrimeRecyclerView;
+    private RecyclerView mEventRecyclerView;
     private	EventAdapter mAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +43,12 @@ public class MainActivity extends AppCompatActivity
             TextView statusTV=(TextView)findViewById(R.id.status);
             statusTV.setText("No Internet Connectivity\n\nTry Again Later");
         }
-        mCrimeRecyclerView	=	(RecyclerView)findViewById(R.id.event_list);
-        mCrimeRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        updateUI();
+        else
+        {
+            mEventRecyclerView	=	(RecyclerView)findViewById(R.id.event_list);
+            mEventRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+            updateUI();
+        }
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         reset();
         navigationView.setNavigationItemSelectedListener(this);
@@ -162,6 +165,6 @@ public class MainActivity extends AppCompatActivity
           events.add(new Event("Event "+i,"January 10, 2017","12:00 AM"));
         }
         mAdapter	=	new	EventAdapter(events);
-        mCrimeRecyclerView.setAdapter(mAdapter);
+        mEventRecyclerView.setAdapter(mAdapter);
     }
 }
